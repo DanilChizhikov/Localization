@@ -37,8 +37,7 @@ namespace MbsCore.Localization.Runtime
         }
 
         public bool HasLanguage(SystemLanguage language) => GroupMap.ContainsKey(language);
-
-        public string GetTerm(string key, SystemLanguage language)
+        public bool TryGetTerm(string key, SystemLanguage language, out string term)
         {
             if (GroupMap.TryGetValue(language, out ILanguageGroup group))
             {
@@ -46,12 +45,14 @@ namespace MbsCore.Localization.Runtime
                 {
                     if (termInfo.Key == key)
                     {
-                        return termInfo.Term;
+                        term = termInfo.Term;
+                        return true;
                     }
                 }
             }
 
-            return InvalidTerm;
+            term = string.Empty;
+            return false;
         }
     }
 }
