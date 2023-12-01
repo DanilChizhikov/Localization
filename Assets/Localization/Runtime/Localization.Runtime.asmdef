@@ -1,0 +1,16 @@
+{
+    "name": "Localization.Runtime",
+    "rootNamespace": "MbsCore",
+    "references": [
+        "GUID:d8119bc67579a4c4496fb3947df60356"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
