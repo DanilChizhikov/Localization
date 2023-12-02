@@ -6,7 +6,7 @@ using UnityEngine;
 namespace MbsCore.Localization.Runtime
 {
     [CreateAssetMenu(menuName = "Localization/Map", fileName = "New" + nameof(LocalizationMap), order = 51)]
-    public sealed class LocalizationMap : ScriptableObject, ILocalizationMap
+    public sealed partial class LocalizationMap : ScriptableObject, ILocalizationMap
     {
         private const string InvalidTerm = "EMPTY";
         
