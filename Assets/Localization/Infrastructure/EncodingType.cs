@@ -1,4 +1,4 @@
-namespace MbsCore.Localization.Runtime.Providers
+namespace MbsCore.Localization.Infrastructure
 {
     public enum EncodingType
     {

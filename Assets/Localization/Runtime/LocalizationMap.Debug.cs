@@ -1,15 +1,12 @@
 #if UNITY_EDITOR
-using UnityEditor;
+using System.Collections.Generic;
+using MbsCore.Localization.Infrastructure;
 
 namespace MbsCore.Localization.Runtime
 {
     public sealed partial class LocalizationMap
     {
-        public void UpdateGroups(LanguageGroup[] groups)
-        {
-            _groups = groups;
-            EditorUtility.SetDirty(this);
-        }
+        public IReadOnlyCollection<ILanguageGroup> Groups => _groups;
     }
 }
 #endif

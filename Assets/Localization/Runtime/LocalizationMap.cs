@@ -8,8 +8,6 @@ namespace MbsCore.Localization.Runtime
     [CreateAssetMenu(menuName = "Localization/Map", fileName = "New" + nameof(LocalizationMap), order = 51)]
     public sealed partial class LocalizationMap : ScriptableObject, ILocalizationMap
     {
-        private const string InvalidTerm = "EMPTY";
-        
         private readonly Dictionary<SystemLanguage, ILanguageGroup> _groupMap = new();
         
         [SerializeField] private LanguageGroup[] _groups = Array.Empty<LanguageGroup>();
