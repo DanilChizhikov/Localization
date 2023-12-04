@@ -1,0 +1,23 @@
+{
+    "name": "com.danilchizhikov.localization",
+    "displayName": "Localization",
+    "version": "0.0.1",
+    "unity": "2022.3",
+    "dependencies": {},
+    "description": "Text localization package for Unity.",
+    "keywords": [
+      "localization"
+    ],
+    "category": "Tools",
+    "author": "MbsCore",
+    "repository": {
+        "type": "git",
+        "url": "ssh://github.com:DanilChizhikov/Localization.git",
+        "directory": "com.danilchizhikov.localization"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@DanilChizhikov"
+    },
+    "license": "MIT"
+  }
+  

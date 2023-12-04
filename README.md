@@ -9,6 +9,7 @@ The current package does not provide an option for saving the language, since th
 ## Table of Contents
 - [Getting Started](#Getting-Started)
     - [Install manually (using .unitypackage)](#Install-manually-(using-.unitypackage))
+    - [Install via UPM (using Git URL)](#Install-via-UPM-(using-Git-URL))
 - [Basic Usage](#Basic-Usage)
     - [Create Map](#Create-Map)
     - [Editor Code](#Editor-Code)
@@ -23,6 +24,14 @@ Prerequisites:
 ### Install manually (using .unitypackage)
 1. Download the .unitypackage from [releases](https://github.com/DanilChizhikov/Localization/releases/) page.
 2. Open Localization.x.x.x.unitypackage
+
+### Install via UPM (using Git URL)
+1. Navigate to your project's Packages folder and open the manifest.json file.
+2. Add this line below the "dependencies": { line
+    - ```json title="Packages/manifest.json"
+      "com.danilchizhikov.localization": "https://github.com/DanilChizhikov/Localization.git?path=Assets/Localization#0.0.1",
+      ```
+UPM should now install the package.
 
 ## Basic Usage
 
